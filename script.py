@@ -49,7 +49,7 @@ image_urls = [
 ]
 headers = {
     "Host": "www.moctale.in",
-    "Accept: */*",
+    "Accept": "*/*",
     "Cache-Control": "no-cache, no-store, must-revalidate",
     "pragma": "no-cache",
     "referer": "https://www.moctale.in/",
@@ -91,3 +91,4 @@ def run_multithreaded_check():
 
 if __name__ == "__main__":
     run_multithreaded_check()
+
