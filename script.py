@@ -74,8 +74,8 @@ def fetch_url(request_id):
     except requests.exceptions.RequestException as e:
         return f"[{request_id}] Error for {target_url}: {e}"
 def run_multithreaded_check():
-    total_requests = 5000
-    max_workers = 200
+    total_requests = 10000
+    max_workers = 500
 
     print(f"Starting execution: {total_requests} requests with up to {max_workers} concurrent threads...")
     start_time = time.time()
@@ -91,4 +91,5 @@ def run_multithreaded_check():
 
 if __name__ == "__main__":
     run_multithreaded_check()
+
 
